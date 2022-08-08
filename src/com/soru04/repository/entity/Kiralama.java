@@ -1,6 +1,7 @@
 package com.soru04.repository.entity;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.soru04.utility.DataBase;
 
@@ -35,7 +36,8 @@ public class Kiralama implements IKiralama {
 
 	@Override
 	public List<Kitap> kiralananKitaplarListesi() {
-		return DataBase.kitapListesi.stream().filter(k -> k.getEstatusKiralama() == EstatusKiralama.RENT).toList();
+		return DataBase.kitapListesi.stream().filter(k -> k.getEstatusKiralama() == EstatusKiralama.RENT)
+				.collect(Collectors.toList());
 	}
 
 }
