@@ -1,6 +1,6 @@
 package com.soru04.repository.entity;
 
-public class Kasiyer extends Kullanıcı {
+public class Kasiyer extends Kullanici {
 
 	private EDeneyim eDeneyim;
 

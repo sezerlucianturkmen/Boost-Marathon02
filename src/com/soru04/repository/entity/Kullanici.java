@@ -2,13 +2,13 @@ package com.soru04.repository.entity;
 
 import java.util.UUID;
 
-public class Kullanıcı {
+public class Kullanici {
 
 	private String id;
 	private String name;
 	private String surname;
 
-	public Kullanıcı(String name, String surname) {
+	public Kullanici(String name, String surname) {
 		super();
 		this.name = name;
 		this.surname = surname;

@@ -3,7 +3,7 @@ package com.soru04.repository.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Musteri extends Kullanıcı {
+public class Musteri extends Kullanici {
 
 	private int age;
 	List<Kitap> whichBooksRent;
