@@ -11,10 +11,24 @@ public interface IKiralama {
 	 */
 	public void kitapKirala(Kitap kitap, Musteri musteri);
 
+	/**
+	 * 
+	 * @param stringID aranan kitap ID si
+	 * @return aranan kitap
+	 */
 	public Kitap kitapAra(String stringID);
 
+	/**
+	 * 
+	 * @param stringID aranan Müsteri ID si
+	 * @return aranan Müsteri
+	 */
 	public Musteri musteriAra(String stringID);
 
+	/**
+	 * 
+	 * @return kira da bulunan kitapların listesini verir.
+	 */
 	public List<Kitap> kiralananKitaplarListesi();
 
 }

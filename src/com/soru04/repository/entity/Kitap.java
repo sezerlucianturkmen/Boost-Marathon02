@@ -11,7 +11,7 @@ public class Kitap {
 	private String yazarAdi;
 	private String yayinYili;
 	private EstatusKiralama estatusKiralama;
-	List<Musteri> whoRentThisList;
+	static List<Musteri> whoRentThisList = null;
 
 	public Kitap(String kitapAdi, String yazarAdi, String yayinYili) {
 		super();
